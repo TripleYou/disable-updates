@@ -133,7 +133,7 @@ class Disable_Updates {
 	 */
 	private function includes() {
 
-		require_once 'ext/gravity-forms.php';
+		require_once 'extensions/gravity-forms.php';
 
 	} // END includes()
 
