@@ -1,0 +1,24 @@
+{
+	"name"        : "wp-cloud/disable-updates",
+	"description" : "Disable all WordPress core, plugin and theme checks and updates",
+	"keywords"    : ["wordpress"],
+	"type"        : "wordpress-muplugin",
+	"homepage"    : "https://github.com/wp-cloud/disable-updates",
+	"license"     : "GPL-2.0+",
+	"authors": [
+    {
+      "name"     : "WP-Cloud",
+      "email"    : "code@wp-cloud.org",
+      "homepage" : "https://www.wp-cloud.org"
+    }
+  ],
+	"support"     : {
+		"issues": "https://github.com/wp-cloud/disable-updates/issues"
+	},
+	"require"     : {
+		"composer/installers": "~1.0"
+	},
+  "autoload": {
+    "files": ["disable-updates.php"]
+  }
+}
