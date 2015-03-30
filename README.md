@@ -1,9 +1,16 @@
 # Disable Updates
+> Disable WordPress update functionality
+
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/?branch=master)
 [![GPL-2.0+](http://img.shields.io/badge/license-GPL--2.0%2B-green.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
 
-## License
-__[GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)__
+## Features
+- WordPress Core Updates
+- WordPress.org Plugin Updates
+- WordPress.org Theme Updates
+- 3rd party (non-WP.org) Plugins
+
+## License: _[GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)_
 
     Disable Updates
     Copyright (C) 2014-2015 WP-Cloud (http://www.wp-cloud.org)
