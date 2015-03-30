@@ -83,7 +83,7 @@ class Core {
 	 */
 	public function remove_update_notices() {
 
-		remove_action( 'admin_notices', 'update_nag', 3   );
+		remove_action( 'admin_notices', 'update_nag', 3 );
 		remove_action( 'admin_notices', 'maintenance_nag' );
 
 	} // END remove_update_notices()
@@ -99,7 +99,7 @@ class Core {
 
 		global $wp_admin_bar;
 
-		$wp_admin_bar->remove_menu('updates');
+		$wp_admin_bar->remove_menu( 'updates' );
 
 	} // END remove_admin_bar_notification()
 
