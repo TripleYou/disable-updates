@@ -76,7 +76,7 @@ class DisableUpdates {
 	 * @since  0.0.1
 	 * @return object
 	 */
-	public static function __return_empty_update() {
+	public static function return_empty_update() {
 
 		global $wp_version;
 

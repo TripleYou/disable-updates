@@ -48,7 +48,7 @@ class Core {
 		remove_action( 'upgrader_process_complete', 'wp_version_check', 10, 0 );
 
 		// Simulate Transient returning "up-to-date"
-		add_filter( 'pre_site_transient_update_core', array( '\\WPC\\DisableUpdates', '__return_empty_update' ) );
+		add_filter( 'pre_site_transient_update_core', array( '\\WPC\\DisableUpdates', 'return_empty_update' ) );
 
 		// Prevent update cron creation + remove potential existing crons
 		remove_action( 'init', 'wp_schedule_update_checks' );

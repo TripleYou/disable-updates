@@ -34,7 +34,7 @@ class Themes {
 		remove_action( 'upgrader_process_complete', 'wp_update_themes', 10, 0 );
 
 		// Simulate Transient returning "up-to-date"
-		add_filter( 'pre_site_transient_update_themes', array( '\\WPC\\DisableUpdates', '__return_empty_update' ) );
+		add_filter( 'pre_site_transient_update_themes', array( '\\WPC\\DisableUpdates', 'return_empty_update' ) );
 
 		// @todo
 		// add_filter( 'site_transient_update_themes', '__return_null' );
