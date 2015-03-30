@@ -9,6 +9,8 @@
 - WordPress.org Plugin Updates
 - WordPress.org Theme Updates
 - 3rd party (non-WP.org) Plugins
+  - Gravity Forms
+  - Gravity Forms Add-Ons
 
 ## License: _[GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)_
 

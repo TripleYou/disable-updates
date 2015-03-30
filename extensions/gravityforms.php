@@ -24,8 +24,8 @@ class GravityForms {
 	 */
 	public function __construct() {
 
-		add_action( 'init',       array( $this, 'gform_remove_update_check' ), 11 );
-		add_action( 'admin_menu', array( $this, 'gform_remove_admin_menus' ), 999 );
+		add_action( 'init',       array( $this, 'remove_update_check' ), 11 );
+		add_action( 'admin_menu', array( $this, 'remove_admin_menus' ), 999 );
 
 	} // END __construct()
 
@@ -38,7 +38,7 @@ class GravityForms {
 	 * @since  0.0.1
 	 * @return void
 	 */
-	public function gform_remove_update_check() {
+	public function remove_update_check() {
 
 		// Gravity Forms Core
 		remove_action( 'after_plugin_row_gravityforms/gravityforms.php', array( 'RGForms', 'plugin_row' ) );
@@ -77,7 +77,7 @@ class GravityForms {
 	 *
 	 * @return void
 	 */
-	public function gform_remove_admin_menus() {
+	public function remove_admin_menus() {
 
 		/** Remove Gravity Forms Update page */
 		remove_submenu_page( 'gf_edit_forms', 'gf_update' );
