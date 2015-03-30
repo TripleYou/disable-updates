@@ -39,12 +39,12 @@ class Core {
 	private function disable_core_updates() {
 
 		add_filter( 'auto_update_core',           '__return_false' );
-		add_filter( 'automatic_updater_disabled', '__return_true'  );
+		add_filter( 'automatic_updater_disabled', '__return_true' );
 
 		// Unhook core version checks
-		remove_action( 'admin_init',                '_maybe_update_core'   );
+		remove_action( 'admin_init',                '_maybe_update_core' );
 		remove_action( 'wp_maybe_auto_update',      'wp_maybe_auto_update' );
-		remove_action( 'wp_version_check',          'wp_version_check'     );
+		remove_action( 'wp_version_check',          'wp_version_check' );
 		remove_action( 'upgrader_process_complete', 'wp_version_check', 10, 0 );
 
 		// Simulate Transient returning "up-to-date"
@@ -52,7 +52,7 @@ class Core {
 
 		// Prevent update cron creation + remove potential existing crons
 		remove_action( 'init', 'wp_schedule_update_checks' );
-		wp_clear_scheduled_hook( 'wp_version_check'     );
+		wp_clear_scheduled_hook( 'wp_version_check' );
 		wp_clear_scheduled_hook( 'wp_maybe_auto_update' );
 
 		// Disable email.
@@ -83,8 +83,8 @@ class Core {
 	 */
 	public function remove_update_notices() {
 
-		remove_action( 'admin_notices', 'update_nag',     3 );
-		remove_action( 'admin_notices', 'maintenance_nag'   );
+		remove_action( 'admin_notices', 'update_nag', 3   );
+		remove_action( 'admin_notices', 'maintenance_nag' );
 
 	} // END remove_update_notices()
 
