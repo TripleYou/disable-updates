@@ -1,28 +1,26 @@
 <?php
 /**
  * @author    WP-Cloud <code@wp-cloud.org>
- * @copyright Copyright (c) 2014, WP-Cloud
+ * @copyright Copyright (c) 2014-2015, WP-Cloud
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GPL-2.0+
- * @package   WPC\Disable_Updates
+ * @package   WPC\DisableUpdates
  * @version   0.0.1
  */
 
-namespace WPC\Disable_Updates;
+namespace WPC\DisableUpdates;
 
 /**
  * Deactivate update and extension functions of Gravity Forms
  *
  * @since 0.0.1
  */
-class Gravity_Forms {
+class GravityForms {
 
 	/**
 	 * Constructor. Hooks all interactions to initialize the class.
 	 *
 	 * @since 0.0.1
 	 * @uses  add_action()
-	 *
-	 * @return void
 	 */
 	public function __construct() {
 
@@ -34,14 +32,14 @@ class Gravity_Forms {
 	/**
 	 * Remove Gravity Forms Update Check
 	 *
-	 * @since 0.0.1
 	 * @uses  remove_action()
 	 * @uses  remove_filter()
 	 *
+	 * @since  0.0.1
 	 * @return void
 	 */
 	public function gform_remove_update_check() {
-		
+
 		// Gravity Forms Core
 		remove_action( 'after_plugin_row_gravityforms/gravityforms.php', array( 'RGForms', 'plugin_row' ) );
 		remove_filter( 'transient_update_plugins',      array( 'RGForms', 'check_update' ) );
@@ -73,10 +71,10 @@ class Gravity_Forms {
 
 	/**
 	 * Remove admin pages for updates and extensions
-	 * 
+	 *
 	 * @since 0.0.1
 	 * @uses  remove_submenu_page()
-	 * 
+	 *
 	 * @return void
 	 */
 	public function gform_remove_admin_menus() {
@@ -100,4 +98,6 @@ class Gravity_Forms {
 
 	} // END remove_admin_menus()
 
-} // class Gravity_Forms
+} // class GravityForms
+
+new GravityForms();
