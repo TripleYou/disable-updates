@@ -4,13 +4,12 @@
  * @copyright Copyright (c) 2014-2015, WP-Cloud
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GPL-2.0+
  * @package   WPC\DisableUpdates
- * @version   0.0.1
  */
 
 namespace WPC\DisableUpdates;
 
 /**
- * Deactivate update and extension functions of Gravity Forms
+ * Deactivate auto updates for themes from wordpress.org
  *
  * @since 0.0.1
  */

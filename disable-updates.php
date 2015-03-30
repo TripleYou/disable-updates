@@ -4,12 +4,12 @@
  * @copyright Copyright (c) 2014-2015, WP-Cloud
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GPL-2.0+
  * @package   WPC\DisableUpdates
- * @version   0.1.0
+ * @version   1.0.0
  */
 /*
 Plugin Name: Disable Updates
 Description: Set the right environment for WP in our cloud
-Version:     0.1.0
+Version:     1.0.0
 Author:      WP-Cloud
 Author URI:  https://www.wp-cloud.eu
 License:     GPL-2.0+
@@ -63,6 +63,7 @@ class DisableUpdates {
 	 * Include extensions for custom/non-wp.org plugins/themes
 	 *
 	 * @since  0.0.1
+	 * @return void
 	 */
 	private function includes( $path ) {
 		foreach ( glob( $path . '/extensions/*.php' ) as $filename ) {

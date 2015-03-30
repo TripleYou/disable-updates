@@ -4,13 +4,12 @@
  * @copyright Copyright (c) 2014-2015, WP-Cloud
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GPL-2.0+
  * @package   WPC\DisableUpdates
- * @version   0.0.1
  */
 
 namespace WPC\DisableUpdates;
 
 /**
- * Deactivate update and extension functions of Gravity Forms
+ * Deactivate updates for WP core
  *
  * @since 0.0.1
  */
@@ -64,7 +63,6 @@ class Core {
 	 * Hook removal of UI elements indicating available updates
 	 *
 	 * @since  0.0.1
-	 * @uses   add_action()
 	 * @return void
 	 */
 	private function hide_ui_elements() {
@@ -92,7 +90,7 @@ class Core {
 	 * Remove Admin Bar indicator for available updates
 	 *
 	 * @since  0.0.1
-	 * @global type $wp_admin_bar
+	 * @global object $wp_admin_bar
 	 * @return void
 	 */
 	public function remove_admin_bar_notification() {
@@ -104,7 +102,7 @@ class Core {
 	} // END remove_admin_bar_notification()
 
 	/**
-	 * @todo desc
+	 * Remove the core update pages
 	 *
 	 * @since  0.0.1
 	 * @return void
@@ -117,7 +115,7 @@ class Core {
 	} // END remove_update_page()
 
 	/**
-	 * @todo desc
+	 * Block auto updating of language packs
 	 *
 	 * @since  0.0.1
 	 * @return void
