@@ -57,6 +57,8 @@ class DisableUpdates {
 	 */
 	public function __construct() {
 		$this->includes( dirname( __FILE__ ) );
+		$this->admin_notice();
+
 	} // END __construct()
 
 	/**
@@ -70,6 +72,24 @@ class DisableUpdates {
 			include_once $filename;
 		}
 	} // END includes()
+
+	public function admin_notice() {
+		$prefix = is_multisite() ? 'network_' : '';
+		add_action( "{$prefix}admin_notices", array( $this, 'print_notice' ) );
+	}
+
+	public function print_notice() {
+		$hook        = get_current_screen()->id;
+		$admin_pages = array( 'plugins', 'plugins-network', 'themes', 'themes-network', );
+
+		if ( in_array( $hook, $admin_pages ) ) {
+		?>
+		<div class="updated">
+			<p><?php _e( 'All Updates and Version Checks are disabled' ); ?></p>
+		</div>
+		<?php
+		}
+	}
 
 	/**
 	 * Return object suggesting everything is 'up-to-date'
