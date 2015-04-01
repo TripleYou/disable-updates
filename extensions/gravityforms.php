@@ -77,18 +77,6 @@ class GravityForms {
 		remove_submenu_page( 'gf_new_form',   'gf_update' );
 		remove_submenu_page( 'gf_entries',    'gf_update' );
 
-		/** Remove Gravity Forms Addons page */
-		remove_submenu_page( 'gf_edit_forms', 'gf_addons' );
-		remove_submenu_page( 'gf_new_form',   'gf_addons' );
-		remove_submenu_page( 'gf_entries',    'gf_addons' );
-
-		/** Remove Gravity Forms Addons page
-		 * @todo Users can activate the help if they have their own GF license
-		 */
-		remove_submenu_page( 'gf_edit_forms', 'gf_help' );
-		remove_submenu_page( 'gf_new_form',   'gf_help' );
-		remove_submenu_page( 'gf_entries',    'gf_help' );
-
 	} // END remove_admin_menus()
 
 } // class GravityForms
