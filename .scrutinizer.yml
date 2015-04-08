@@ -1,5 +1,6 @@
 # Scruitinizer Config
-# @profile    WPStore-Plugin@0.0.1
+# @profile    WPStore\Scruitinizer\Plugin@0.0.1
+# @link       https://github.com/WPStore/WPStore.github.io/tree/master/Scrutinizer-CI
 # @subprofile DisableUpdates@0.0.1
 tools:
     # Runs PHP Code Sniffer
