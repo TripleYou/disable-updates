@@ -15,6 +15,7 @@ Author URI:  https://www.wp-cloud.eu
 License:     GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Network:     true
+GitHub Plugin URI: wp-cloud/disable-updates
 
     Disable Updates
     Copyright (C) 2014-2015 WP-Cloud (http://www.wp-cloud.org)
