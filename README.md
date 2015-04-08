@@ -1,8 +1,10 @@
 # Disable Updates
 > Disable WordPress update functionality
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/?branch=develop)
 [![GPL-2.0+](http://img.shields.io/badge/license-GPL--2.0%2B-green.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
+
+[Stable Releases](https://github.com/wp-cloud/disable-updates/releases) | [Current Development (`develop` branch)](https://github.com/wp-cloud/disable-updates)
 
 ## Features
 - WordPress Core Updates
@@ -11,6 +13,10 @@
 - 3rd party (non-WP.org) Plugins
   - Gravity Forms
   - Gravity Forms Add-Ons
+
+## Changelog
+* 1.0.0 (2015-04-01)
+  * initial release
 
 ## License: _[GPL-2.0+](http://www.gnu.org/licenses/gpl-2.0.html)_
 

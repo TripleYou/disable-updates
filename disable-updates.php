@@ -4,12 +4,12 @@
  * @copyright Copyright (c) 2014-2015, WP-Cloud
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GPL-2.0+
  * @package   WPC\DisableUpdates
- * @version   1.0.0
+ * @version   1.1.0-dev
  */
 /*
 Plugin Name: Disable Updates
 Description: Set the right environment for WP in our cloud
-Version:     1.0.0
+Version:     1.1.0-dev
 Author:      WP-Cloud
 Author URI:  https://www.wp-cloud.eu
 License:     GPL-2.0+
