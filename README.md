@@ -1,11 +1,10 @@
 # Disable Updates
 > Disable WordPress update functionality
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/?branch=develop)
-[![Code Coverage](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/badges/coverage.png?b=develop)](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/?branch=develop)
-
 [![GPL-2.0+](http://img.shields.io/badge/license-GPL--2.0%2B-green.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
 [![GitHub tag](https://img.shields.io/github/tag/wp-cloud/disable-updates.svg)](https://github.com/wp-cloud/disable-updates/releases)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/?branch=develop)
+[![Code Coverage](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/badges/coverage.png?b=develop)](https://scrutinizer-ci.com/g/wp-cloud/disable-updates/?branch=develop)
 
 ## Features
 - WordPress Core Updates
